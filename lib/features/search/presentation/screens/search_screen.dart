@@ -295,7 +295,10 @@ class _SearchScreenState extends ConsumerState<SearchScreen> {
             icao: result.airlineIcao ?? '',
             iata: result.airlineIata,
             name: result.title,
-            country: result.subtitle?.split(' - ').lastOrNull,
+            // `subtitle` is non-nullable (SearchResultItem); the ?. operator
+            // was a leftover from when the type was String?. flutter analyze
+            // flags it as `invalid_null_aware_operator`.
+            country: result.subtitle.split(' - ').lastOrNull,
           ),
         ));
       case SearchResultType.apiResult:
