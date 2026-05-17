@@ -1,0 +1,43 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(grep -E \"\\\\.dart$\")",
+      "Bash(wc -l \"C:\\\\projects\\\\sky_tracker\\\\lib\\\\features\\\\flight_details\\\\presentation\\\\widgets\\\\panel_sections/\"*.dart)",
+      "Bash(grep -l \"class.*Section\" \"C:\\\\projects\\\\sky_tracker\\\\lib\\\\features\\\\flight_details\\\\presentation\\\\widgets\\\\panel_sections\"/*.dart)",
+      "Bash(find \"C:\\\\projects\\\\sky_tracker\" -name \"*.dart\" -type f -exec grep -l \"f\\\\['\" {} \\\\;)",
+      "Bash(python3)",
+      "Bash(bash)",
+      "Bash(flutter analyze:*)",
+      "Bash(flutter devices:*)",
+      "Bash(flutter run:*)",
+      "WebSearch",
+      "Bash(taskkill //F //IM \"chrome.exe\" //T)",
+      "Bash(taskkill //F //FI \"WINDOWTITLE eq *flutter*\")",
+      "Bash(taskkill //F //FI \"IMAGENAME eq dart.exe\")",
+      "Bash(ipconfig)",
+      "Bash(flutter pub:*)",
+      "Bash(xargs grep:*)",
+      "WebFetch(domain:airlabs.co)",
+      "Read(//c/projects/**)",
+      "Bash(npx create-next-app@latest airwatch-web --typescript --tailwind --eslint --app --src-dir --no-import-alias --use-npm)",
+      "Bash(npm install:*)",
+      "Bash(npx next:*)",
+      "Bash(npm run:*)",
+      "Bash(dart run:*)",
+      "Bash(netstat -ano)",
+      "Bash(taskkill //PID 21316 //F)",
+      "Bash(taskkill //PID 3244 //F)",
+      "mcp__Claude_Preview__preview_start",
+      "Bash(grep -oP \"'\\([A-Z]{4}\\)': AirportEntry\\\\\\('\\([A-Z]{4}\\)', '\\([A-Z]{2,3}\\)', '\\([^']*\\)', '\\([^']*\\)', '\\([A-Z]{2}\\)', \\([0-9.-]+\\), \\([0-9.-]+\\)\\\\\\)\" lib/core/constants/airport_full_database.dart)",
+      "Bash(grep -rn '\\\\\\\\u00' \"C:\\\\projects\\\\airwatch-web\\\\src\\\\app/\" --include=\"*.tsx\")",
+      "Bash(grep -rn '\\\\\\\\u00' \"C:\\\\projects\\\\airwatch-web\\\\src/\" --include=\"*.tsx\" --include=\"*.ts\")",
+      "Bash(mv /tmp/airports_clean.ts src/lib/data/airports.ts)",
+      "Bash(python3 -c ':*)",
+      "Bash(node -e ':*)",
+      "Bash(sed \"s/.*'\\\\\\([A-Z]*\\\\\\)': AirportEntry\\('\\\\\\([^']*\\\\\\)', '\\\\\\([^']*\\\\\\)', '\\\\\\([^']*\\\\\\)', '\\\\\\([^']*\\\\\\)', '\\\\\\([^']*\\\\\\)', \\\\\\([0-9.-]*\\\\\\), \\\\\\([0-9.-]*\\\\\\)\\).*/\\\\\"\\\\3\\\\\":{c:\\\\\"\\\\6\\\\\",n:\\\\\"\\\\5\\\\\",la:\\\\7,lo:\\\\8},/\")",
+      "Read(//tmp/**)",
+      "Bash(grep -n \"AirportEntry\\\\|\\\\\\\\\\\\\\\\'\" \"C:\\\\projects\\\\airwatch-web\\\\src\\\\lib\\\\data\\\\airports.ts\")",
+      "Bash(node fix-airports.js)"
+    ]
+  }
+}
