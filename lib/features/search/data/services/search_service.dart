@@ -63,6 +63,13 @@ class SearchService {
     ];
 
     results.addAll(_searchAirlines(q));
+    // Country results from the offline DB. Was dropped from the call
+    // chain in an earlier refactor (analyze flagged _searchCountries
+    // as unreferenced); the test
+    // SearchService > returns country results from local database
+    // re-enforces the contract that "Germany" / "fr" / etc. surface a
+    // SearchResultType.country.
+    results.addAll(_searchCountries(q, current: results));
 
     if (q.length >= 3 && !_isOnlyLetters(q)) {
       // 1. Try live /flight endpoint — finds active + recently landed flights
