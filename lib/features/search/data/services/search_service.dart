@@ -438,7 +438,7 @@ class SearchService {
           return SearchResultItem(
             type: SearchResultType.liveAircraft,
             title: cs,
-            subtitle: a.originCountry,
+            subtitle: a.originCountry ?? '',
             status: 'landed',
             altitude: a.altitude,
             aircraft: a,
