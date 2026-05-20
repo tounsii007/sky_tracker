@@ -57,7 +57,7 @@ dependencies:
   flutter_local_notifications: ^21.0.0
 
   # Home Widget
-  home_widget: ^0.9.0
+  home_widget: ^0.9.1
 
 dev_dependencies:
   flutter_test:
