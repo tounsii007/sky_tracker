@@ -1,0 +1,39 @@
+{
+  "editor.formatOnSave": true,
+  "editor.tabSize": 2,
+  "files.eol": "\n",
+  "files.insertFinalNewline": true,
+  "files.trimTrailingWhitespace": true,
+  "[dart]": {
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "editor.rulers": [100],
+    "editor.selectionHighlight": false,
+    "editor.suggest.snippetsPreventQuickSuggestions": false,
+    "editor.suggestSelection": "first",
+    "editor.tabCompletion": "onlySnippets",
+    "editor.wordBasedSuggestions": "off",
+    "editor.defaultFormatter": "Dart-Code.dart-code"
+  },
+  "dart.lineLength": 100,
+  "dart.previewFlutterUiGuides": true,
+  "dart.previewFlutterUiGuidesCustomTracking": true,
+  "dart.runPubGetOnPubspecChanges": "always",
+  "dart.openDevTools": "flutter",
+  "dart.flutterHotReloadOnSave": "manual",
+  "dart.warnWhenEditingFilesOutsideWorkspace": true,
+  "search.exclude": {
+    "**/.dart_tool": true,
+    "**/build": true,
+    "**/.flutter-plugins-dependencies": true,
+    "**/pubspec.lock": true,
+    "**/*.g.dart": true,
+    "**/*.freezed.dart": true,
+    "**/ios/Pods": true,
+    "**/android/.gradle": true
+  },
+  "files.exclude": {
+    "**/.dart_tool": true,
+    "**/.flutter-plugins-dependencies": true
+  }
+}
