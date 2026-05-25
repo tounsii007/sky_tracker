@@ -1,0 +1,52 @@
+# Auto-detect text files and normalize line endings to LF in the repo.
+* text=auto eol=lf
+
+# Dart / Flutter
+*.dart            text eol=lf diff=dart
+pubspec.yaml      text eol=lf
+pubspec.lock      text eol=lf -diff
+analysis_options.yaml text eol=lf
+
+# Config
+*.yaml            text eol=lf
+*.yml             text eol=lf
+*.json            text eol=lf
+*.toml            text eol=lf
+
+# Docs
+*.md              text eol=lf
+LICENSE           text eol=lf
+
+# Web
+*.html            text eol=lf
+*.css             text eol=lf
+*.js              text eol=lf
+*.ts              text eol=lf
+
+# Native build files
+*.gradle          text eol=lf
+*.kts             text eol=lf
+gradlew           text eol=lf
+gradlew.bat       text eol=crlf
+*.sh              text eol=lf
+
+# Binary — never normalize
+*.png             binary
+*.jpg             binary
+*.jpeg            binary
+*.gif             binary
+*.webp            binary
+*.ico             binary
+*.svg             text eol=lf
+*.ttf             binary
+*.otf             binary
+*.woff            binary
+*.woff2           binary
+*.mp3             binary
+*.mp4             binary
+*.jar             binary
+*.zip             binary
+
+# Generated files — hide from diff by default
+*.g.dart          linguist-generated=true
+*.freezed.dart    linguist-generated=true
